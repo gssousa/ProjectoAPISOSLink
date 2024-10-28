@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Sign Up Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="inner-container">
+        <h2>Create an Account</h2>
+        <p>Usernames are restricted to 30 characters.</p>
+        <p>Passwords are restricted to 25 characters.</p>
+        <p>Make sure both passwords are equal.</p>
+        <form id='signUp_form' method="POST">
+            <input type="text" onkeypress="limitLength(event,this,30)" id='signUp_username' name="username" placeholder="Username" required>
+            <input type="email" onkeypress="limitLength(event,this,60)" id='signUp_email' name="email" placeholder="Email" required>
+            <input type="password" onkeypress="limitLength(event,this,25)" name="password" placeholder="Password" required>
+            <input type="password" onkeypress="limitLength(event,this,25)" name="cpassword" placeholder="Confirm Password" required>
+            <input type="submit" id="signUp_submit" name="signUp_submit" value="Sign Up">
+        </form>
+        <p id="display"></p>
+    </div>
+</body>
+</html>

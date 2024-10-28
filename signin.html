@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Sign In Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="inner-container">
+        <h2>Sign In To Your Account</h2>
+        <form id='signIn_form' method="POST">
+            <input type="text" onkeypress="limitLength(event,this,30)" id="signIn_username" name="username" placeholder="Username" required>
+            <input type="password" onkeypress="limitLength(event,this,25)" id="signIn_password" name="password" placeholder="Password" required>
+            <input type="submit" name="signIn_submit" value="Sign In">
+        </form>
+        <p id="display"></p>
+    </div>
+</body>
+</html>

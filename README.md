@@ -2,10 +2,10 @@
 
 API Endpoints:
 - [GET] Homepage -> <b>DIR_NAME/</b> 
-- API Request [POST] SignIn -> <b> DIR_NAME/users/SignIn </b>
+- API Request [POST] SignIn -> <b> DIR_NAME/users/signIn </b>
     - username -> Name do User
     - password -> Password do User 
-- API Request [POST] SignUp -> <b> DIR_NAME/users/SignUp </b>
+- API Request [POST] SignUp -> <b> DIR_NAME/users/signUp </b>
     - username -> Name do User
     - password -> Password do User
     - cpassword -> Confirm Password

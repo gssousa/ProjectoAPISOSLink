@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set(timezoneId: "Europe/Lisbon");
+date_default_timezone_set("Europe/Lisbon");
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= '/ProjectoAPISOSLink/config/config.php';
 
